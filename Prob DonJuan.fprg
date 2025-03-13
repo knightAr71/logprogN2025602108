@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Prob DonJuan"/>
+        <attribute name="authors" value="caste"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-12 09:23:04 p. m."/>
+        <attribute name="created" value="Y2FzdGU7Q09SS0kxNzIwMjg7MjAyNS0wMy0xMjsxMjoyNzoyMSBwLiBtLjsyNjc0"/>
+        <attribute name="edited" value="Y2FzdGU7Q09SS0kxNzIwMjg7MjAyNS0wMy0xMjswOToyMzowNCBwLiBtLjsyOzI3ODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="IVA, COBRU, ATR, ARO, ATRI, AT, IVAT, CONET, Costm2" type="Real" array="False" size=""/>
+            <input variable="Costm2"/>
+            <assign variable="IVA" expression="0.16"/>
+            <assign variable="ARO" expression="12*5.1961"/>
+            <assign variable="ATRI" expression="(6*10.3923)/2"/>
+            <assign variable="AT" expression="ATRI+ARO"/>
+            <assign variable="COBRU" expression="AT*Costm2"/>
+            <assign variable="IVAT" expression="COBRU*IVA"/>
+            <assign variable="CONET" expression="COBRU+IVAT"/>
+            <output expression="COBRU" newline="True"/>
+            <output expression="AT" newline="True"/>
+            <output expression="CONET" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
