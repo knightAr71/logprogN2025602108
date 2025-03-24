@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reactivo 1"/>
+        <attribute name="authors" value="caste"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-23 09:41:46 p. m."/>
+        <attribute name="created" value="Y2FzdGU7Q09SS0kxNzIwMjg7MjAyNS0wMy0yMzswOToxOToyNSBwLiBtLjsyNjg3"/>
+        <attribute name="edited" value="Y2FzdGU7Q09SS0kxNzIwMjg7MjAyNS0wMy0yMzswOTo0MTo0NiBwLiBtLjsxOzI3OTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Indica cuantas donas compraste&quot;" newline="True"/>
+            <declare name="CostDona, DonaCom, TotCost, TotCosto" type="Integer" array="False" size=""/>
+            <assign variable="CostDona" expression="10"/>
+            <input variable="DonaCom"/>
+            <if expression="DonaCom&gt;=30">
+                <then>
+                    <if expression="DonaCom&gt;=50">
+                        <then>
+                            <assign variable="TotCost" expression="(CostDona*DonaCom)-(DonaCom*2)"/>
+                            <output expression="&quot;El Costo con descuento de 50 donas o mas es:&quot;" newline="True"/>
+                            <output expression="TotCost" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="TotCost" expression="(CostDona*DonaCom)-(DonaCom)"/>
+                            <output expression="&quot;El Costo con descuento de 30 donas o mas es:&quot;" newline="True"/>
+                            <output expression="TotCost" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="TotCost" expression="(CostDona*DonaCom)"/>
+                    <output expression="&quot;El Costo es:&quot;" newline="True"/>
+                    <output expression="TotCost" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
