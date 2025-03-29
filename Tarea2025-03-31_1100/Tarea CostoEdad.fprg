@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tarea 2"/>
+        <attribute name="authors" value="caste"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-28 09:10:53 p. m."/>
+        <attribute name="created" value="Y2FzdGU7Q09SS0kxNzIwMjg7MjAyNS0wMy0yODswOTowMDo1MiBwLiBtLjsyNjgy"/>
+        <attribute name="edited" value="Y2FzdGU7Q09SS0kxNzIwMjg7MjAyNS0wMy0yODswOToxMDo1MyBwLiBtLjsxOzI3OTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Edad" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;Qu&#233; edad tienes?&quot;" newline="True"/>
+            <input variable="Edad"/>
+            <if expression="Edad&lt;=4">
+                <then>
+                    <if expression="Edad&gt;0">
+                        <then>
+                            <output expression="&quot;Entras gratis&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Cantidad invalida&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Edad&lt;=18">
+                        <then>
+                            <output expression="&quot;El costo de tu entrada es de $200&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;El costo de tu entrada es de $500&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

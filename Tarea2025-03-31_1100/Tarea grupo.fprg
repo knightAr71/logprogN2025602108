@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tipo de Grupo"/>
+        <attribute name="authors" value="caste"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-28 09:00:40 p. m."/>
+        <attribute name="created" value="Y2FzdGU7Q09SS0kxNzIwMjg7MjAyNS0wMy0yODswODozNjozMiBwLiBtLjsyNjg4"/>
+        <attribute name="edited" value="Y2FzdGU7Q09SS0kxNzIwMjg7MjAyNS0wMy0yODswOTowMDo0MCBwLiBtLjsxOzI3ODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Inicial, Sexo, Grupo, Mu, M, N" type="String" array="False" size=""/>
+            <output expression="&quot;Indica tu sexo con Mu u Ho&quot;" newline="True"/>
+            <input variable="Sexo"/>
+            <output expression="&quot;Indica la inical de tu nombre&quot;" newline="True"/>
+            <input variable="Inicial"/>
+            <if expression="Sexo==&quot;Mu&quot;">
+                <then>
+                    <if expression="Inicial&lt;&quot;M&quot;">
+                        <then>
+                            <output expression="&quot;Eres del gurpo A&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Eres del grupo B&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="Inicial&gt;&quot;N&quot;">
+                        <then>
+                            <output expression="&quot;Eres del gurpo A&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Eres del grupo B&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
