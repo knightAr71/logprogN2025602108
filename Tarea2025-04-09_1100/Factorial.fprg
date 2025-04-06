@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Factorial"/>
+        <attribute name="authors" value="caste"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-04 09:57:38 p. m."/>
+        <attribute name="created" value="Y2FzdGU7Q09SS0kxNzIwMjg7MjAyNS0wNC0wNDswOTowODozOSBwLiBtLjsyNjkw"/>
+        <attribute name="edited" value="Y2FzdGU7Q09SS0kxNzIwMjg7MjAyNS0wNC0wNDswOTo1NzozOCBwLiBtLjsxOzI4MDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Fac, Num, A" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese el numero al que desas sacar el factorial&quot;" newline="True"/>
+            <input variable="Num"/>
+            <assign variable="Fac" expression="1"/>
+            <assign variable="A" expression="1"/>
+            <do expression="A&lt;=Num">
+                <assign variable="Fac" expression="Fac*A"/>
+                <assign variable="A" expression="A+1"/>
+            </do>
+            <output expression="&quot;El factorial es&quot;" newline="True"/>
+            <output expression="Fac" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

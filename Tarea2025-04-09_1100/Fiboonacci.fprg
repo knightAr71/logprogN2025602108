@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Fiboonacci"/>
+        <attribute name="authors" value="caste"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-06 05:32:04 p. m."/>
+        <attribute name="created" value="Y2FzdGU7Q09SS0kxNzIwMjg7MjAyNS0wNC0wNjswNToxMToxNCBwLiBtLjsyNjc1"/>
+        <attribute name="edited" value="Y2FzdGU7Q09SS0kxNzIwMjg7MjAyNS0wNC0wNjswNTozMjowNCBwLiBtLjsxOzI3ODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Num, A, B, C" type="Integer" array="False" size=""/>
+            <assign variable="A" expression="0"/>
+            <assign variable="B" expression="1"/>
+            <assign variable="Num" expression="65"/>
+            <while expression="Num&gt;0">
+                <output expression="A" newline="True"/>
+                <assign variable="B" expression="B+A"/>
+                <assign variable="A" expression="B-A"/>
+                <assign variable="Num" expression="Num-1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
